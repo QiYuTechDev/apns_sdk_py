@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "apns_py"
+name = "apns_sdk_py"
 version = "0.1.0"
 description = ""
 authors = ["dev <dev@qiyutech.tech>"]
