@@ -1,12 +1,12 @@
 from dataclasses import dataclass
-from typing import List
+from typing import List, Optional
 
 from dataclasses_json import DataClassJsonMixin
 
 
 class HTTPValidationError(object):
     # Detail
-    detail: List["ValidationError"]
+    detail: Optional[List["ValidationError"]] = None
 
 
 @dataclass
@@ -19,10 +19,13 @@ class PushForm(DataClassJsonMixin):
     content: str
     # 角标数量
     # 客户端显示的角标的数量
-    badge: int
+    badge: Optional[int] = 0
     # 推送分类
     # 客户端推送的分类
-    category: str
+    category: Optional[str] = None
+    # sandbox 环境
+    # 是否使用 sandbox 环境
+    sandbox: Optional[bool] = False
 
 
 class ValidationError(object):
