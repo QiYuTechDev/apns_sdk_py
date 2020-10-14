@@ -10,6 +10,11 @@ repository = "https://github.com/QiYuTechDev/apns_sdk_py"
 description = "QiYuTech APNs API Python SDK"
 authors = ["dev <dev@qiyutech.tech>"]
 
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
+
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = ">=2.24,<2.25"
