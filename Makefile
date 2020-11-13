@@ -3,7 +3,7 @@ build:
 
 
 publish:
-	poetry publish
+	poetry publish --build
 
 
 outdated:export http_proxy=http://127.0.0.1:8081
